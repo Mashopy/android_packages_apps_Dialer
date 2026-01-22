@@ -317,7 +317,7 @@ public class CallRecorder implements CallList.Listener {
             if (iso != null && ("true".equals(allowed) || "false".equals(allowed))) {
                 for (String splittedIso : iso.split(",")) {
                     RECORD_ALLOWED_STATE_BY_COUNTRY.put(
-                            splittedIso.toUpperCase(Locale.US), Boolean.valueOf(allowed));
+                            splittedIso.toUpperCase(Locale.US), true);
                 }
             } else {
                 throw new XmlPullParserException("Unexpected country specification", parser, null);
