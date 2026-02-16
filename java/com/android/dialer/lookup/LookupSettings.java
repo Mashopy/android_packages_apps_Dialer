@@ -50,7 +50,7 @@ public final class LookupSettings {
   }
 
   public static boolean isForwardLookupEnabled(Context context) {
-    return getSharedPreferences(context).getBoolean(ENABLE_FORWARD_LOOKUP, false);
+    return getSharedPreferences(context).getBoolean(ENABLE_FORWARD_LOOKUP, true);
   }
 
   public static void setForwardLookupEnabled(Context context, boolean value) {
@@ -58,7 +58,7 @@ public final class LookupSettings {
   }
 
   public static boolean isReverseLookupEnabled(Context context) {
-    return getSharedPreferences(context).getBoolean(ENABLE_REVERSE_LOOKUP, false);
+    return getSharedPreferences(context).getBoolean(ENABLE_REVERSE_LOOKUP, true);
   }
 
   public static void setReverseLookupEnabled(Context context, boolean value) {
