@@ -759,6 +759,15 @@
         <activity
             android:name="com.android.voicemail.impl.configui.VoicemailSecretCodeActivity"
             android:exported="false" />
+
+        <service
+            android:name="com.android.dialer.spam.SpamCallScreeningService"
+            android:permission="android.permission.BIND_SCREENING_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
  * Copyright (C) 2023 The LineageOS Project
+ * Copyright (C) 2026 The iodéOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,8 +19,10 @@
 package com.android.dialer.app.calllog;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.ContentUris;
 import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -49,6 +52,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
@@ -75,10 +79,14 @@ import com.android.dialer.phonenumbercache.CallLogQuery;
 import com.android.dialer.phonenumbercache.ContactInfo;
 import com.android.dialer.phonenumbercache.ContactInfoHelper;
 import com.android.dialer.phonenumberutil.PhoneNumberHelper;
+import com.android.dialer.spam.SpamDetect;
 import com.android.dialer.telecom.TelecomUtil;
 import com.android.dialer.util.PermissionsUtil;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
@@ -756,8 +764,13 @@ public class CallLogAdapter extends GroupingListAdapter
     public void execute() {
       mExecutor.execute(() -> {
         final boolean success;
-        mViewHolder.isBlocked = BlockedNumberContract.canCurrentUserBlockNumbers(activity) &&
+        boolean isSystemBlocked = BlockedNumberContract.canCurrentUserBlockNumbers(activity) &&
                 BlockedNumberContract.isBlocked(activity, mViewHolder.number);
+
+        boolean isIodeBlocked = SpamDetect.isSpamEnabled(activity, mViewHolder.number) && !SpamDetect.isAllowlisted(activity, mViewHolder.number);
+
+        mViewHolder.isBlocked = isSystemBlocked || isIodeBlocked;
+
         mDetails.isBlocked = mViewHolder.isBlocked;
         if (mIsCancelled) {
           success = false;
@@ -1240,13 +1253,40 @@ public class CallLogAdapter extends GroupingListAdapter
    * @return The day group description.
    */
   private CharSequence getGroupDescription(int group) {
+    CharSequence baseText;
     if (group == CallLogGroupBuilder.DAY_GROUP_TODAY) {
-      return activity.getResources().getString(R.string.call_log_header_today);
+      baseText = activity.getResources().getString(R.string.call_log_header_today);
     } else if (group == CallLogGroupBuilder.DAY_GROUP_YESTERDAY) {
-      return activity.getResources().getString(R.string.call_log_header_yesterday);
+      baseText = activity.getResources().getString(R.string.call_log_header_yesterday);
     } else {
-      return activity.getResources().getString(R.string.call_log_header_other);
+      baseText = activity.getResources().getString(R.string.call_log_header_other);
     }
+
+    SharedPreferences prefs = activity.getSharedPreferences("iode_spam_prefs", Context.MODE_PRIVATE);
+
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+    Calendar cal = Calendar.getInstance();
+
+    String todayStr = sdf.format(cal.getTime());
+    cal.add(Calendar.DAY_OF_YEAR, -1);
+    String yesterdayStr = sdf.format(cal.getTime());
+
+    int todayCount = prefs.getInt("spam_count_" + todayStr, 0);
+    int yesterdayCount = prefs.getInt("spam_count_" + yesterdayStr, 0);
+    int totalCount = prefs.getInt("spam_count_total", 0);
+
+    int displayCount = 0;
+
+    if (group == CallLogGroupBuilder.DAY_GROUP_TODAY) {
+        displayCount = todayCount;
+    } else if (group == CallLogGroupBuilder.DAY_GROUP_YESTERDAY) {
+        displayCount = yesterdayCount;
+    } else {
+        displayCount = totalCount - todayCount - yesterdayCount;
+        if (displayCount < 0) displayCount = 0;
+    }
+
+    return baseText.toString() + " • " + activity.getString(R.string.iode_call_log_spam_stats, displayCount);
   }
 
   public void onAllSelected() {

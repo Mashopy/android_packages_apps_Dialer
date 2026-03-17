@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
  * Copyright (C) 2023 The LineageOS Project
+ * Copyright (C) 2026 The iodéOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +41,7 @@ import androidx.preference.PreferenceManager;
 
 import com.android.dialer.R;
 import com.android.dialer.app.BaseActivity;
+import com.android.dialer.app.settings.IodeSettingsFragment;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.compat.telephony.TelephonyManagerCompat;
 import com.android.dialer.lookup.LookupSettingsFragment;
@@ -186,6 +188,12 @@ public class DialerSettingsActivity extends BaseActivity implements
         blockedCalls.setIconSpaceReserved(false);
         getPreferenceScreen().addPreference(blockedCalls);
       }
+
+      Preference iodeSettings = new Preference(getContext());
+      iodeSettings.setTitle(R.string.iode_settings_title);
+      iodeSettings.setFragment(IodeSettingsFragment.class.getName());
+      iodeSettings.setIconSpaceReserved(false);
+      getPreferenceScreen().addPreference(iodeSettings);
 
       addVoicemailSettings(isPrimaryUser);
 

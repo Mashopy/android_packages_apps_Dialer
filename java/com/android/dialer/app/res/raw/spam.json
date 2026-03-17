@@ -1,0 +1,2903 @@
+{
+    "version": "2026.02.26.17.26",
+    "name": "Préfixes démarchage France : ARCEP et préfixes opérateurs additionnels",
+    "description": "Préfixes ARCEP et les opérateurs suivants : LNCT, KAVE, VAST, SPAR, YAAT, SNXS, CLTE, PNAT, INOX, OXIL, DVSC, COCR, MEFR, LGC, EONE, UBIC, FNTX, IAGI, SPCV, PLUG, OPHO, STER, TLKC, CYDS, GETG, MKTO, QWLK, ONOF, EOLY, DGIS, DLPL, LPUP, TWIL, M2AS, GMBZ, DDXL, SLLG, ZETE, MNTM, NIMU, DYRU",
+    "blocked_numbers_count": 14464000,
+    "patterns": [
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33162######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33163######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33270######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33271######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33377######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33378######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33424######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33425######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33568######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33569######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33948######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "33949######"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "339475#####"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "339476#####"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "339477#####"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "339478#####"
+        },
+        {
+            "name": "Préfixe démarchage ARCEP",
+            "action": "block",
+            "pattern": "339479#####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3315913####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3315916####"
+        },
+        {
+            "name": "Marketing online",
+            "action": "block",
+            "pattern": "33159260###"
+        },
+        {
+            "name": "Qwalikom",
+            "action": "block",
+            "pattern": "3315939####"
+        },
+        {
+            "name": "Ophony",
+            "action": "block",
+            "pattern": "33159410###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33159490###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33159491###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33159580###"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33159581###"
+        },
+        {
+            "name": "E-OLYMPE",
+            "action": "block",
+            "pattern": "33159583###"
+        },
+        {
+            "name": "Fonitex technologie",
+            "action": "block",
+            "pattern": "33172898###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33174879###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33175954###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184642###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184643###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184644###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184645###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184646###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184647###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184648###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33184649###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3318656####"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33186706###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3318764####"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3318768####"
+        },
+        {
+            "name": "Vast new telecom",
+            "action": "block",
+            "pattern": "3318778####"
+        },
+        {
+            "name": "Talkcycle LLC DBA FrontSpin",
+            "action": "block",
+            "pattern": "33187941###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33187943###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33187944###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33187945###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33187946###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3318831####"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188440###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188441###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188442###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188443###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188444###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188445###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188446###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188447###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188448###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33188449###"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3318900####"
+        },
+        {
+            "name": "Spacinov",
+            "action": "block",
+            "pattern": "33189141###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189260###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189261###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189262###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189263###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189264###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189266###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189267###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189268###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33189269###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33189366###"
+        },
+        {
+            "name": "DidXL B.V.",
+            "action": "block",
+            "pattern": "33189368###"
+        },
+        {
+            "name": "Sonixis",
+            "action": "block",
+            "pattern": "33189369###"
+        },
+        {
+            "name": "Infinivox",
+            "action": "block",
+            "pattern": "33189375###"
+        },
+        {
+            "name": "Lineconnects",
+            "action": "block",
+            "pattern": "33189379###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189470###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189471###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189472###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189473###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189474###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189477###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33189479###"
+        },
+        {
+            "name": "Go Mybiz France",
+            "action": "block",
+            "pattern": "3318949####"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "3318956####"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3318960####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3318961####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189620###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189621###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189622###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189623###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189624###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189625###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189626###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189627###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189628###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33189629###"
+        },
+        {
+            "name": "Eone trade",
+            "action": "block",
+            "pattern": "3318963####"
+        },
+        {
+            "name": "Cyd-solutions",
+            "action": "block",
+            "pattern": "3318969####"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3318978####"
+        },
+        {
+            "name": "Loopup Spain",
+            "action": "block",
+            "pattern": "33189790###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3318986####"
+        },
+        {
+            "name": "Setera communications OY",
+            "action": "block",
+            "pattern": "33189870###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "3318992####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33189931###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33189932###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33189933###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "3321465####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3321473####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3321901####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33219071###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33219385###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33219386###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33219387###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33219388###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33219389###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3322164####"
+        },
+        {
+            "name": "Sonixis",
+            "action": "block",
+            "pattern": "33221824###"
+        },
+        {
+            "name": "Infinivox",
+            "action": "block",
+            "pattern": "33221829###"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3322196####"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33236571###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33252149###"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3325504####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33255371###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33255372###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33255373###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33255374###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3325542####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3325545####"
+        },
+        {
+            "name": "Fonitex technologie",
+            "action": "block",
+            "pattern": "33258201###"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3325835####"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258480###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258481###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258482###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258483###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258484###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258485###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33258488###"
+        },
+        {
+            "name": "Go Mybiz France",
+            "action": "block",
+            "pattern": "3325849####"
+        },
+        {
+            "name": "Cyd-solutions",
+            "action": "block",
+            "pattern": "3325856####"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258580###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258581###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258582###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258583###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258584###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258585###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33258589###"
+        },
+        {
+            "name": "Marketing online",
+            "action": "block",
+            "pattern": "33258650###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "3325933####"
+        },
+        {
+            "name": "Eone trade",
+            "action": "block",
+            "pattern": "3325937####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33259394###"
+        },
+        {
+            "name": "Loopup Spain",
+            "action": "block",
+            "pattern": "33259480###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3325950####"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259590###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259591###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259592###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259593###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259594###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259595###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259596###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259597###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259598###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33259599###"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33259671###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33263020###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33263070###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33263071###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263080###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263082###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263083###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263085###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263086###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263087###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263088###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33263089###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33269026###"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3326967####"
+        },
+        {
+            "name": "Spacinov",
+            "action": "block",
+            "pattern": "33279291###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33279740###"
+        },
+        {
+            "name": "Lineconnects",
+            "action": "block",
+            "pattern": "33279769###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3327983####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339072###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339073###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339074###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339075###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339076###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339077###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339078###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33339079###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3333910####"
+        },
+        {
+            "name": "Lineconnects",
+            "action": "block",
+            "pattern": "33339582###"
+        },
+        {
+            "name": "Marketing online",
+            "action": "block",
+            "pattern": "33343000###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3335349####"
+        },
+        {
+            "name": "Sonixis",
+            "action": "block",
+            "pattern": "33353653###"
+        },
+        {
+            "name": "Infinivox",
+            "action": "block",
+            "pattern": "33353658###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33353706###"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33353791###"
+        },
+        {
+            "name": "E-OLYMPE",
+            "action": "block",
+            "pattern": "33353794###"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3335633####"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33356664###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33356990###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33356999###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3336747####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3336748####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33373356###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33373357###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33373358###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33373359###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33374531###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33374532###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33374533###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33374534###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3337466####"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3337577####"
+        },
+        {
+            "name": "Go Mybiz France",
+            "action": "block",
+            "pattern": "3337584####"
+        },
+        {
+            "name": "Fonitex technologie",
+            "action": "block",
+            "pattern": "33375889###"
+        },
+        {
+            "name": "Cyd-solutions",
+            "action": "block",
+            "pattern": "3337592####"
+        },
+        {
+            "name": "Spacinov",
+            "action": "block",
+            "pattern": "33376191###"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3337629####"
+        },
+        {
+            "name": "Loopup Spain",
+            "action": "block",
+            "pattern": "33376340###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3337637####"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33376440###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33376441###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33376449###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376470###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376471###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376472###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376473###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376474###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376475###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376476###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376477###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376478###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33376479###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3337933####"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379580###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379581###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379582###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379583###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379584###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379588###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33379589###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33392140###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33392142###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33392146###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33392148###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33392149###"
+        },
+        {
+            "name": "Eone trade",
+            "action": "block",
+            "pattern": "3339217####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3339223####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33411347###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411761###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411762###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411763###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411764###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411765###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411766###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411767###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411768###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33411769###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3341178####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33412058###"
+        },
+        {
+            "name": "Sonixis",
+            "action": "block",
+            "pattern": "33412134###"
+        },
+        {
+            "name": "Infinivox",
+            "action": "block",
+            "pattern": "33412139###"
+        },
+        {
+            "name": "Eone trade",
+            "action": "block",
+            "pattern": "3341214####"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3341226####"
+        },
+        {
+            "name": "Loopup Spain",
+            "action": "block",
+            "pattern": "33412310###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3341233####"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412370###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412371###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412372###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412373###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412374###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412377###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412378###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33412379###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "3341246####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412470###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412471###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412472###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412473###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412474###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412475###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33412476###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33420220###"
+        },
+        {
+            "name": "Lineconnects",
+            "action": "block",
+            "pattern": "33420230###"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33420261###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3342285####"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3342300####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33423035###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33423036###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33423037###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33423038###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3342310####"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423411###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423412###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423413###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423414###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423415###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423418###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33423419###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3344902####"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33449310###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33449311###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33449312###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33449313###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33449315###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33449317###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33449381###"
+        },
+        {
+            "name": "Fonitex technologie",
+            "action": "block",
+            "pattern": "33449391###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33449450###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33449459###"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3345109####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33451144###"
+        },
+        {
+            "name": "Go Mybiz France",
+            "action": "block",
+            "pattern": "3345129####"
+        },
+        {
+            "name": "Spacinov",
+            "action": "block",
+            "pattern": "33451381###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3345145####"
+        },
+        {
+            "name": "Cyd-solutions",
+            "action": "block",
+            "pattern": "3345156####"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33451610###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33451619###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451630###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451631###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451632###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451633###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451634###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451635###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451636###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451637###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451638###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33451639###"
+        },
+        {
+            "name": "Marketing online",
+            "action": "block",
+            "pattern": "33451710###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3346563####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3348793####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33516881###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3351794####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3351807####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33518251###"
+        },
+        {
+            "name": "Lineconnects",
+            "action": "block",
+            "pattern": "33519093###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33523620###"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33523651###"
+        },
+        {
+            "name": "E-OLYMPE",
+            "action": "block",
+            "pattern": "33523654###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33525261###"
+        },
+        {
+            "name": "Fonitex technologie",
+            "action": "block",
+            "pattern": "33525270###"
+        },
+        {
+            "name": "Sonixis",
+            "action": "block",
+            "pattern": "33525342###"
+        },
+        {
+            "name": "Infinivox",
+            "action": "block",
+            "pattern": "33525347###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33525360###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33525361###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33525364###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33525366###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33525367###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33525369###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525455###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525456###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525457###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525458###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525459###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33525460###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33525461###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33525463###"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3352547####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525535###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525536###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525537###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525538###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525539###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525540###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525541###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525542###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525543###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525544###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33525545###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33525610###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33525611###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33525612###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33525615###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "33525619###"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3353257####"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3353292####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3353294####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33532994###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33532995###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33532996###"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33532997###"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3353666####"
+        },
+        {
+            "name": "Go Mybiz France",
+            "action": "block",
+            "pattern": "3353690####"
+        },
+        {
+            "name": "Eone trade",
+            "action": "block",
+            "pattern": "3353696####"
+        },
+        {
+            "name": "Loopup Spain",
+            "action": "block",
+            "pattern": "33537050###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3353707####"
+        },
+        {
+            "name": "Cyd-solutions",
+            "action": "block",
+            "pattern": "3353712####"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537160###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537161###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537162###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537163###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537164###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537165###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537166###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537167###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537168###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33537169###"
+        },
+        {
+            "name": "Marketing online",
+            "action": "block",
+            "pattern": "33537260###"
+        },
+        {
+            "name": "Spacinov",
+            "action": "block",
+            "pattern": "33548243###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3355464####"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3355465####"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590160###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590162###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590169###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33590170###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33590171###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33590172###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33590173###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33590178###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590340###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590344###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590345###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33590349###"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3359441####"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33594950###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33594952###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33594959###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594960###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594962###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594963###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594964###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594965###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594966###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594967###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33594969###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596310###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596311###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596312###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596313###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596314###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596315###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596316###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596317###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33596319###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33596450###"
+        },
+        {
+            "name": "Sellig",
+            "action": "block",
+            "pattern": "33640043###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3364466####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3364467####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3364468####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3364469####"
+        },
+        {
+            "name": "Did logic pte Ltd",
+            "action": "block",
+            "pattern": "33743120###"
+        },
+        {
+            "name": "Did logic pte Ltd",
+            "action": "block",
+            "pattern": "33743124###"
+        },
+        {
+            "name": "Vast new telecom",
+            "action": "block",
+            "pattern": "3374313####"
+        },
+        {
+            "name": "Mentor telecom SE",
+            "action": "block",
+            "pattern": "33743465###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "3374403####"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3374406####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374430####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374431####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374432####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374433####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374434####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374435####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3374436####"
+        },
+        {
+            "name": "Mentor telecom SE",
+            "action": "block",
+            "pattern": "33745803###"
+        },
+        {
+            "name": "Vast new telecom",
+            "action": "block",
+            "pattern": "33748761###"
+        },
+        {
+            "name": "Vast new telecom",
+            "action": "block",
+            "pattern": "33748762###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33755535###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33755536###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "337568#####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "337569#####"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33757130###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33757131###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33757132###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3375759####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3375780####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3375781####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3375782####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3375783####"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "3375784####"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3375786####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757900###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757901###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757902###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757903###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757904###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757905###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757907###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757913###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757916###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757917###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "33757918###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "337809#####"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3380121####"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3380124####"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "3380129####"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3380136####"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "33801870###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3380300####"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33803870###"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33803871###"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "33806020###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3380603####"
+        },
+        {
+            "name": "M2A Solutions",
+            "action": "block",
+            "pattern": "33890119###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "3389017####"
+        },
+        {
+            "name": "MINT MULTIMEDIA B.V.",
+            "action": "block",
+            "pattern": "33890308###"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "33895689###"
+        },
+        {
+            "name": "Spacinov",
+            "action": "block",
+            "pattern": "33939010###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3393903####"
+        },
+        {
+            "name": "Get & go telecom",
+            "action": "block",
+            "pattern": "33939080###"
+        },
+        {
+            "name": "Vast new telecom",
+            "action": "block",
+            "pattern": "33939090###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3393924####"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "33939375###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33939401###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "3397102####"
+        },
+        {
+            "name": "Destiny global infra services",
+            "action": "block",
+            "pattern": "33972037###"
+        },
+        {
+            "name": "Fonitex technologie",
+            "action": "block",
+            "pattern": "33972039###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33972048###"
+        },
+        {
+            "name": "Onoff telecom",
+            "action": "block",
+            "pattern": "33972049###"
+        },
+        {
+            "name": "Plug and tel",
+            "action": "block",
+            "pattern": "3397274####"
+        },
+        {
+            "name": "Ubicentrex",
+            "action": "block",
+            "pattern": "3397276####"
+        },
+        {
+            "name": "Go Mybiz France",
+            "action": "block",
+            "pattern": "3397342####"
+        },
+        {
+            "name": "Eone trade",
+            "action": "block",
+            "pattern": "3397347####"
+        },
+        {
+            "name": "Lineconnects",
+            "action": "block",
+            "pattern": "33973703###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3397396####"
+        },
+        {
+            "name": "Cyd-solutions",
+            "action": "block",
+            "pattern": "3397397####"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974030###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974031###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974033###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974034###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974035###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974036###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974037###"
+        },
+        {
+            "name": "ZE telecom",
+            "action": "block",
+            "pattern": "33974039###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974071###"
+        },
+        {
+            "name": "Sonixis",
+            "action": "block",
+            "pattern": "33974073###"
+        },
+        {
+            "name": "Infinivox",
+            "action": "block",
+            "pattern": "33974079###"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3397433####"
+        },
+        {
+            "name": "M2A Solutions",
+            "action": "block",
+            "pattern": "33974342###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33974348###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33974377###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "33974378###"
+        },
+        {
+            "name": "Voxnode",
+            "action": "block",
+            "pattern": "3397467####"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974720###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974721###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974722###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974723###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974724###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974725###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974726###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974727###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974728###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33974729###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974960###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974961###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974962###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974963###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974964###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974965###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974966###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974967###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974968###"
+        },
+        {
+            "name": "Spartel services",
+            "action": "block",
+            "pattern": "33974969###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3397499####"
+        },
+        {
+            "name": "Iagility",
+            "action": "block",
+            "pattern": "33978260###"
+        },
+        {
+            "name": "Twilio Ireland Limited",
+            "action": "block",
+            "pattern": "3397846####"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3397882####"
+        },
+        {
+            "name": "Oxilog France",
+            "action": "block",
+            "pattern": "3397883####"
+        },
+        {
+            "name": "M2A Solutions",
+            "action": "block",
+            "pattern": "33978879###"
+        },
+        {
+            "name": "Marketing online",
+            "action": "block",
+            "pattern": "33978940###"
+        },
+        {
+            "name": "Kav El International",
+            "action": "block",
+            "pattern": "3398540####"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33987282###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33987283###"
+        },
+        {
+            "name": "DVS Connect",
+            "action": "block",
+            "pattern": "33987284###"
+        },
+        {
+            "name": "Qwalikom",
+            "action": "block",
+            "pattern": "3398729####"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987690###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987691###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987692###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987693###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987694###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987695###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987696###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987697###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987698###"
+        },
+        {
+            "name": "Menytel France",
+            "action": "block",
+            "pattern": "33987699###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33988260###"
+        },
+        {
+            "name": "Cloud telecom",
+            "action": "block",
+            "pattern": "33988261###"
+        },
+        {
+            "name": "Manifone",
+            "action": "block",
+            "pattern": "3398829####"
+        },
+        {
+            "name": "Test number",
+            "action": "block",
+            "pattern": "33130956210"
+        },
+        {
+            "name": "Test number",
+            "action": "block",
+            "pattern": "33667521599"
+        }
+    ]
+}

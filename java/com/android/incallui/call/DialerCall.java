@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2013 The Android Open Source Project
  * Copyright (C) 2023 The LineageOS Project
+ * Copyright (C) 2026 The iodéOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +27,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.os.SystemClock;
 import android.os.Trace;
+import android.provider.CallLog.Calls;
 import android.telecom.Call;
 import android.telecom.Call.Details;
 import android.telecom.Call.RttCall;
@@ -63,6 +65,8 @@ import com.android.dialer.logging.ContactLookupResult;
 import com.android.dialer.preferredsim.PreferredAccountRecorder;
 import com.android.dialer.rtt.RttTranscript;
 import com.android.dialer.rtt.RttTranscriptUtil;
+import com.android.dialer.spam.Spam;
+import com.android.dialer.spam.SpamDetect;
 import com.android.dialer.telecom.TelecomCallUtil;
 import com.android.dialer.telecom.TelecomUtil;
 import com.android.dialer.util.PermissionsUtil;
@@ -1212,7 +1216,25 @@ public class DialerCall implements VideoTechListener {
   }
 
   public boolean isSpam() {
-    return false;
+    int verificationStatus = Connection.VERIFICATION_STATUS_NOT_VERIFIED;
+
+    // DialerCall usually holds the system call in getTelecomCall()
+    if (getTelecomCall() != null && getTelecomCall().getDetails() != null) {
+      // Now we call it on the specific instance, not the class
+      verificationStatus = getTelecomCall().getDetails().getCallerNumberVerificationStatus();
+    }
+
+    int callType = (getState() == DialerCallState.INCOMING || getState() == DialerCallState.CALL_WAITING)
+                   ? Calls.INCOMING_TYPE
+                   : Calls.OUTGOING_TYPE;
+
+    // Detect if the incomming call is detected as spam
+    boolean isNumberSpam = false;
+    if (((callType == Calls.INCOMING_TYPE) && (!SpamDetect.isAllowlisted(context, getNumber())))) {
+      isNumberSpam = SpamDetect.isSpam(context, verificationStatus, getNumber());
+    }
+
+    return Spam.shouldShowAsSpam(isNumberSpam, callType);
   }
 
   public boolean isBlocked() {

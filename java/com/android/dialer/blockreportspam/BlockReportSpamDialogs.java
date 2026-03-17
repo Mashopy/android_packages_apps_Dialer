@@ -30,6 +30,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
+import com.android.dialer.spam.SpamDetect;
 import com.android.dialer.R;
 
 /** Creates dialog fragments to block a number and/or report it as spam/not spam. */
@@ -57,6 +58,30 @@ public final class BlockReportSpamDialogs {
     return (dialog, which) -> {
       fragment.dismiss();
       listener.onClick();
+    };
+  }
+
+  private static DialogInterface.OnClickListener createBlockOnClickListener(
+      final DialogFragment fragment, final String number, final OnConfirmListener listener) {
+    return (dialog, which) -> {
+      SpamDetect.removeFromAllowlist(fragment.getContext(), number);
+
+      fragment.dismiss();
+      if (listener != null) {
+          listener.onClick();
+      }
+    };
+  }
+
+  private static DialogInterface.OnClickListener createUnblockOnClickListener(
+      final DialogFragment fragment, final String number, final OnConfirmListener listener) {
+    return (dialog, which) -> {
+      SpamDetect.addToAllowlist(fragment.getContext(), number);
+
+      fragment.dismiss();
+      if (listener != null) {
+          listener.onClick();
+      }
     };
   }
 
@@ -207,7 +232,7 @@ public final class BlockReportSpamDialogs {
               .setTitle(getString(R.string.block_number_confirmation_title, displayNumber))
               .setMessage(getString(R.string.block_report_number_alert_details))
               .setPositiveButton(
-                  R.string.block_number_ok, createGenericOnClickListener(this, positiveListener))
+                  R.string.block_number_ok, createBlockOnClickListener(this, displayNumber, positiveListener))
               .create();
       dialog.setCanceledOnTouchOutside(true);
       return dialog;
@@ -244,7 +269,7 @@ public final class BlockReportSpamDialogs {
               .setTitle(getString(R.string.block_number_confirmation_title, displayNumber))
               .setMessage(getString(R.string.block_report_number_alert_details))
               .setPositiveButton(
-                  R.string.block_number_ok, createGenericOnClickListener(this, positiveListener))
+                  R.string.block_number_ok, createBlockOnClickListener(this, displayNumber, positiveListener))
               .create();
       dialog.setCanceledOnTouchOutside(true);
       return dialog;
@@ -293,7 +318,7 @@ public final class BlockReportSpamDialogs {
       Dialog dialog =
           alertDialogBuilder
               .setPositiveButton(
-                  R.string.unblock_number_ok, createGenericOnClickListener(this, positiveListener))
+                  R.string.unblock_number_ok, createUnblockOnClickListener(this, displayNumber, positiveListener))
               .create();
       dialog.setCanceledOnTouchOutside(true);
       return dialog;
@@ -330,7 +355,7 @@ public final class BlockReportSpamDialogs {
       Dialog dialog =
           alertDialogBuilder
               .setPositiveButton(
-                  R.string.unblock_number_ok, createGenericOnClickListener(this, positiveListener))
+                  R.string.unblock_number_ok, createUnblockOnClickListener(this, displayNumber, positiveListener))
               .create();
       dialog.setCanceledOnTouchOutside(true);
       return dialog;
