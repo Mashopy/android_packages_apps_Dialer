@@ -27,10 +27,16 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 
 import com.android.dialer.R;
+import com.android.dialer.util.IodeApiUtil;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -53,6 +59,7 @@ public class SpamDetect {
     private static final String STIR_SHAKEN_COUNTRIES_REGEX = "^(?:\\+1[2-9]\\d{8}|\\+33[1-9]\\d{8})$"; // USA, Canada and France
 
     private static List<Pattern> spamPatterns = null;
+    private static List<String> spamNumbers = null;
 
     public static void incrementSpamCount(Context context) {
         SharedPreferences prefs = context.getSharedPreferences("iode_spam_prefs", Context.MODE_PRIVATE);
@@ -142,14 +149,21 @@ public class SpamDetect {
         if (e164Number == null) e164Number = phoneNumber;
 
         synchronized (SpamDetect.class) {
-            if (spamPatterns == null) {
+            if (spamPatterns == null && spamNumbers == null) {
                 loadSpamList(context);
             }
 
-            if (spamPatterns != null) {
+            if (spamPatterns != null && !spamPatterns.isEmpty()) {
                 for (Pattern p : spamPatterns) {
                     if (p.matcher(e164Number).matches()) {
-                        Log.w(TAG, "Spam Match! " + e164Number + " matched pattern: " + p.pattern());
+                        Log.w(TAG, "Spam pattern match! " + e164Number + " matched pattern: " + p.pattern());
+                        return true;
+                    }
+                }
+
+                for (String s : spamNumbers) {
+                    if (s.equals(e164Number)) {
+                        Log.w(TAG, "Spam number match! " + e164Number + " matched exact number: " + s);
                         return true;
                     }
                 }
@@ -283,35 +297,41 @@ public class SpamDetect {
     }
 
     private static void loadSpamList(Context context) {
+        SharedPreferences prefs = context.getSharedPreferences("iode_spam_prefs", Context.MODE_PRIVATE);
+        long lastFetch = prefs.getLong("saved_list_timestamp", 0);
         spamPatterns = new ArrayList<>();
-        try {
-            // Read the JSON file
-            InputStream is = context.getResources().openRawResource(R.raw.spam);
-            byte[] buffer = new byte[is.available()];
-            is.read(buffer);
-            is.close();
+        spamNumbers = new ArrayList<>();
 
-            String jsonStr = new String(buffer, StandardCharsets.UTF_8);
+        if (lastFetch == 0 || System.currentTimeMillis() - lastFetch > 24 * 60 * 60 * 1000L) {
+            Log.d(TAG, "No cached blocklist found or cache expired. Fetching from API...");
 
-            // Parse the root JSON object
-            JSONObject root = new JSONObject(jsonStr);
-            JSONArray patternsArray = root.getJSONArray("patterns");
-
-            for (int i = 0; i < patternsArray.length(); i++) {
-                JSONObject item = patternsArray.getJSONObject(i);
-                String rawPattern = item.getString("pattern");
-                String action = item.optString("action", "block");
-
-                // Only add it if the action is "block"
-                if ("block".equalsIgnoreCase(action)) {
-                    // Convert JSON format (33162######) to Regex (^\+?33162\d{6}$)
-                    String regexStr = "^\\+?" + rawPattern.replace("#", "\\d") + "$";
-                    spamPatterns.add(Pattern.compile(regexStr));
+            try {
+                String raw = IodeApiUtil.getApiBlocklist(context);
+                if (raw == null || raw.isEmpty()) {
+                    Log.e(TAG, "No blocklist received, getApiBlocklist returned null or empty string.");
+                    return;
                 }
+
+                for (String entry : raw.split("\n")) {
+                    entry = entry.trim();
+                    if (entry.isEmpty()) continue;
+
+                    if (entry.contains("#")) {
+                        // Pattern e.g. 33162###### → ^\+?33162\d{6}$
+                        String regexStr = "^\\+?" + entry.replace("#", "\\d") + "$";
+                        spamPatterns.add(Pattern.compile(regexStr));
+                    } else {
+                        // Complete number e.g. +12015345822 → exact match
+                        spamNumbers.add(entry);
+                    }
+                }
+                Log.w(TAG, "Successfully compiled " + spamPatterns.size() + " block patterns.");
+                Log.w(TAG, "Successfully compiled " + spamNumbers.size() + " block numbers.");
+            } catch (Exception e) {
+                Log.e(TAG, "Failed to build blocklist API", e);
             }
-            Log.w(TAG, "Successfully compiled " + spamPatterns.size() + " block patterns.");
-        } catch (Exception e) {
-            Log.e(TAG, "Failed to load Spam JSON", e);
+        } else  {
+            Log.d(TAG, "Blocklist cache is fresh. Skipping API check.");
         }
     }
 }
